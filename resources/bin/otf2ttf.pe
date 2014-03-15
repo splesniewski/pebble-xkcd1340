@@ -1,0 +1,4 @@
+#!/usr/bin/fontforge
+# need a small script to work around bug in UBUNTU-12.04
+Open($1)
+Generate($2)
