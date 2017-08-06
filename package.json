@@ -1,0 +1,49 @@
+{
+  "author": "Stephen Lesniewski",
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "name": "xkcd1340",
+  "pebble": {
+    "capabilities": [],
+    "displayName": "xkcd 1340",
+    "enableMultiJS": false,
+    "messageKeys": {
+      "dummy": 0
+    },
+    "projectType": "native",
+    "resources": {
+      "media": [
+        {
+          "file": "image/menu.png",
+          "menuIcon": true,
+          "name": "MENU_ICON",
+          "type": "png"
+        },
+        {
+          "file": "font/xkcd.ttf",
+          "name": "FONT_XKCD_8",
+          "type": "font"
+        },
+        {
+          "file": "image/pebble.unique_time.png",
+          "name": "XKCD1340",
+          "type": "png"
+        }
+      ]
+    },
+    "sdkVersion": "3",
+    "targetPlatforms": [
+      "diorite"
+    ],
+    "uuid": "52caecdf-7693-45b5-8ce1-d98e3dfb3d04",
+    "watchapp": {
+      "hiddenApp": false,
+      "onlyShownOnCommunication": false,
+      "watchface": true
+    }
+  },
+  "private": true,
+  "version": "1.0.0"
+}

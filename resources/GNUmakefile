@@ -27,13 +27,13 @@ _external/git/xkcd-font/build.py:
 	git clone https://github.com/ipython/xkcd-font.git _external/git/xkcd-font
 	cd _external/git/xkcd-font/ && git gc --aggressive
 
-_external/git/xkcd-font/build/xkcd.otf: _external/git/xkcd-font/build.py
-	cd _external/git/xkcd-font/ && python build.py
+_external/git/xkcd-font/build/xkcd.otf: _external/git/xkcd-font/xkcd/build.py
+	cd _external/git/xkcd-font/xkcd/ && python build.py
 
 #----------------------------------------------------------------
 font/xkcd.ttf:bin/otf2ttf.pe _external/git/xkcd-font/build/xkcd.otf
 	-mkdir font/
-	/usr/bin/fontforge -script bin/otf2ttf.pe _external/git/xkcd-font/build/xkcd.otf $@
+	fontforge -script bin/otf2ttf.pe _external/git/xkcd-font/xkcd/build/xkcd.otf $@
 
 #----------------------------------------------------------------
 image/clean.unique_time.png: _external/xkcd/unique_date.png

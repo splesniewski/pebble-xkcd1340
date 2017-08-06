@@ -6,3 +6,8 @@ build
 #emacs
 *~
 .#*
+
+node_modules/
+resources/_external/*
+resources/font/*
+resources/image/*

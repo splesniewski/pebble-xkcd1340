@@ -44,7 +44,7 @@ static void window_load(Window *window) {
   layer_add_child(window_layer, text_layer_get_layer(time_textlayer));
 
   time_t now= time(NULL);
-  struct tm *t; 
+  struct tm *t;
   t = localtime(&now);
   update_time(t);
 
